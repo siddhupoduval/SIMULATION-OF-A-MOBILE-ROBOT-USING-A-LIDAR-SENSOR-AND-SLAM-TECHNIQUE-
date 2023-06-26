@@ -1,34 +1,36 @@
-# Open a new terminal window, and create a new workspace. You can call it any name, but we will call it “ros_ws”
-Inside the workspace, we will create a source (i.e. src) directory. This is where your packages will go.
+# Creating a workspace in ros2
 
-mkdir -p ~/ros_ws/src
+### Open a new terminal window, and create a new workspace. You can call it any name, but we will call it “ros_ws”
+### Inside the workspace, we will create a source (i.e. src) directory. This is where your packages will go**.
 
-
-#Navigate to the workspace.
-
-cd ~/ros_ws/
+`mkdir -p ~/ros_ws/src`
 
 
-#Let’s build the packages. Go to the root of the workspace.
+### Navigate to the workspace.
 
-sudo apt update
-sudo apt install python3-colcon-common-extensions
+`cd ~/ros_ws/`
 
 
-Build the packages
+### Let’s build the packages. Go to the root of the workspace.
 
-colcon build
+`sudo apt update`
+`sudo apt install python3-colcon-common-extensions`
 
-Finally, we need to add the packages in this workspace to the current environment.
 
-sudo apt-get install gedit
+### Build the packages
 
-Open a new terminal window, and open your .bashrc file:
+`colcon build`
 
-gedit ~/.bashrc
+### Finally, we need to add the packages in this workspace to the current environment.
 
-Add this line of code to the very bottom of the .bashrc file.
+`sudo apt-get install gedit`
 
-source ~/dev_ws/install/setup.bash
+### Open a new terminal window, and open your .bashrc file:
 
-Save the file, and close it.
+`gedit ~/.bashrc`
+
+### Add this line of code to the very bottom of the .bashrc file.
+
+`source ~/dev_ws/install/setup.bash`
+
+### Save the file, and close it.
