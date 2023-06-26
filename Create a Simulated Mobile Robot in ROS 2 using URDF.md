@@ -10,23 +10,43 @@ Before getting started, ensure that you have the following:
 
 ## Steps
 
-1. **Set up a workspace**
+1. **Install Important ROS 2 Packages**
+   
+   Open a new terminal window, and type the following commands, one right after the other.
 
-   Create a new ROS workspace to organize your robot-related files and packages. You can use the following command to create a workspace named "my_robot_ws":
-
-`mkdir -p ros_ws/src`
-
-`cd ros_ws`
-
-`colcon build`
-
-`source install/setup.bash`
+    `sudo apt install ros-<ros2-distro>-joint-state-publisher-gui`
+  
+    `sudo apt install ros-<ros2-distro>-xacro`
 
 
+2. **Create a ROS 2 Package**
+   In a new terminal window, move to the src
 
-2. **Create a URDF file**
+   `ros2 pkg create --build-type ament_cmake basic_mobile_robot`
+
+   Move inside the package and create these folders.
+
+   'mkdir config launch maps meshes models params rviz worlds'
+
+   Now build the package by typing the following command
+
+   `cd ~/ros_ws`
+   
+   `colcon build`
+   
+    
+   
+4. **Create a URDF file**
 
 Design your robot's structure using the URDF format. The URDF file describes the robot's links, joints, sensors, and other physical properties. You can use a text editor or a URDF visual editor, such as URDF Editor, to create and edit the URDF file.
+
+ Go to basic_moblie_robot folder and open a new terminal window
+
+ `cd models`
+
+ put your urdf file here
+
+
 
 3. **Configure the robot's appearance**
 
