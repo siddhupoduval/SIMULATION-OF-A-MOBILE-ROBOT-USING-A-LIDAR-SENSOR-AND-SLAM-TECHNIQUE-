@@ -83,4 +83,32 @@ save and close the file
 
    this is where u add your config code for rviz
 
+
+6. **Build the package**
+
+   Build the project.
+
+   `cd ~/ros_ws/`
+   
+   `colcon build`
+
+7. **Launch the Robot in RViz**
+
+   Open a new terminal, and launch the robot.
+
+   `cd ~/ros_ws/`
+   
+   `ros2 launch basic_mobile_robot basic_mobile_bot_v1.launch.py`
+
+8. **View the Coordinate Frames**
+
+   `ros2 run tf2_tools view_frames.py`
+
+   `evince frames.pdf`
+
+   ![image](https://github.com/siddhupoduval/SIMULATION-OF-A-MOBILE-ROBOT-USING-A-LIDAR-SENSOR-AND-SLAM-TECHNIQUE-/assets/117801516/a3e98b68-d399-4b39-8c53-01633294d167)
+
+   
+
+
    
