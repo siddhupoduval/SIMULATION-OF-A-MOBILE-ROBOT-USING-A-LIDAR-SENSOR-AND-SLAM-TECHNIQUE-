@@ -47,27 +47,28 @@ Design your robot's structure using the URDF format. The URDF file describes the
  put your urdf file here
 
 
+ Let’s add some packages that our project will depend on
 
-3. **Configure the robot's appearance**
+ `cd ~/ros_ws/src/basic_mobile_robot`
 
-Specify the visual appearance of the robot's links and joints by defining geometries and materials. You can use shapes like boxes, cylinders, or meshes to represent your robot's physical components. Additionally, define the materials to assign colors or textures to the robot's visual elements.
+ `gedit package.xml`
 
-4. **Define the robot's kinematics**
+ After the <buildtool_depend> tag, add the following lines:
 
-Define the kinematic structure of the robot by specifying the hierarchical relationship between the robot's links and joints. Each joint connects two links and determines their relative movement. You need to define the joint types (e.g., fixed, revolute, continuous), their limits, and the transformation (origin) of each joint with respect to its parent link.
+`<exec_depend>joint_state_publisher</exec_depend>
+<exec_depend>robot_state_publisher</exec_depend>
+<exec_depend>rviz</exec_depend>
+<exec_depend>xacro</exec_depend>`
 
-5. **Add sensors or plugins**
+save and close the file
 
-If your robot requires sensors or additional functionality, you can add sensor elements or plugins to the URDF file. This allows you to simulate and interact with the robot's sensors within ROS.
 
-6. **Launch a simulation environment**
 
-Set up a simulation environment, such as Gazebo or Webots, where you can test and visualize the behavior of your robot. Launch the simulation environment with appropriate configuration files and ensure it is running correctly.
+5. **Create the Launch File**
+   open terminal from the basic_mobile_robot folder and type:
 
-7. **Integrate the robot in the environment**
+   `cd launch`
 
-Write launch files or scripts to load the robot's URDF model into the simulation environment. This step typically involves specifying the robot's control interfaces, sensor plugins, and other necessary components. Launch the simulation environment along with your robot's URDF file and observe how the robot behaves.
+   `gedit basic_mobile_bot_v1.launch.py`
 
-8. **Test and iterate**
-
-Test your simulated robot's functionality and behavior within the environment. If needed, iterate on the URDF file, adjust parameters, or add more features until your robot behaves as desired.
+   
