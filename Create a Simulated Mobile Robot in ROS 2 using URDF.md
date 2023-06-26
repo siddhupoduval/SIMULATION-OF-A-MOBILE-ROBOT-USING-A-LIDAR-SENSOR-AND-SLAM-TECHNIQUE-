@@ -71,4 +71,16 @@ save and close the file
 
    `gedit basic_mobile_bot_v1.launch.py`
 
+
+   Let’s add a configuration file that will initialize RViz with the proper settings so we can view the robot as soon as RViz launches
+
+
+   `colcon_cd basic_mobile_robot`
+
+   `cd rviz`
+
+   `gedit urdf_config.rviz`
+
+   this is where u add your config code for rviz
+
    
