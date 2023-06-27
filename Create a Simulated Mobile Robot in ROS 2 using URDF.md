@@ -357,7 +357,7 @@ This is where you write the nav2_config.rviz file
 
 
 
-   8. **Launch the Robot With SLAM**
+8. **Launch the Robot With SLAM**
   
       **Prerequsists**
 
@@ -375,11 +375,11 @@ This is where you write the nav2_config.rviz file
             rqt_robot_steering
 
 
-   9. **Save the Map**
+9. **Save the Map**
   
              cd maps
       
-       Type the following command to save the map:
+   Type the following command to save the map:
 
             ros2 run nav2_map_server map_saver_cli -f my_map
 
