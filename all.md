@@ -186,6 +186,9 @@ GAZEBO
            ros2 launch basic_mobile_robot basic_mobile_bot_v2.launch.py
 
 
+![image](https://github.com/siddhupoduval/SIMULATION-OF-A-MOBILE-ROBOT-USING-A-LIDAR-SENSOR-AND-SLAM-TECHNIQUE-/assets/117801516/f5397743-e786-4d17-8139-407e3042ccae)
+
+
 
 
 # Setting Up LIDAR
@@ -258,6 +261,10 @@ Edit the Launch File
 
 
 ![image](https://github.com/siddhupoduval/SIMULATION-OF-A-MOBILE-ROBOT-USING-A-LIDAR-SENSOR-AND-SLAM-TECHNIQUE-/assets/117801516/7cf814f7-8532-4bc7-b082-51ba0ac970e3)
+
+
+
+
 
 
 
