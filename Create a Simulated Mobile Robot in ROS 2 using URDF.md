@@ -286,6 +286,36 @@ Edit the Launch File
 
 3. **Add Navigation Stack Parameters**
 
+      The most important parameters are for the Costmap 2D package.A costmap is a map made up of numerous grid cells. Each grid cell has a “cost”. The cost              represents the difficulty a robot would have trying to move through that cell. 
+
+   For example, a cell containing an obstacle would have a high cost. A cell that has no obstacle in it would have a low cost.
+
+
+   We will use the AMCL (Adaptive Monte Carlo Localization) algorithm
+
+   Go to `~/ros_ws/src/basic_mobile_robot/params folder`
+
+   Create the nav2_params.yaml file here
+
+
+4. **Create an RViz Configuration File**
+
+   
+         cd rviz
+
+    
+Create a new RViz file.
+
+         gedit nav2_config.rviz
+
+
+This is where you write the nav2_config.rviz file
+
+5. **Update the Plugin Parameters**
+
+      We have to updated the LIDAR plugin parameters inside model.sdf inside the basic_mobile_robot_description folder
+   
+
    
 
 
