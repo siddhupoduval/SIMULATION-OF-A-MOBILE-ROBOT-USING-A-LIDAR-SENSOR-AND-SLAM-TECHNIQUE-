@@ -187,10 +187,6 @@ GAZEBO
            ros2 launch basic_mobile_robot basic_mobile_bot_v2.launch.py
 
 
-![image](https://github.com/siddhupoduval/SIMULATION-OF-A-MOBILE-ROBOT-USING-A-LIDAR-SENSOR-AND-SLAM-TECHNIQUE-/assets/117801516/f5397743-e786-4d17-8139-407e3042ccae)
-
-
-
 
 # Setting Up LIDAR
 
@@ -261,7 +257,9 @@ Edit the Launch File
 
 
 
-![image](https://github.com/siddhupoduval/SIMULATION-OF-A-MOBILE-ROBOT-USING-A-LIDAR-SENSOR-AND-SLAM-TECHNIQUE-/assets/117801516/7cf814f7-8532-4bc7-b082-51ba0ac970e3)
+![image](https://github.com/siddhupoduval/SIMULATION-OF-A-MOBILE-ROBOT-USING-A-LIDAR-SENSOR-AND-SLAM-TECHNIQUE-/assets/117801516/1c99bee7-73c9-4d72-b092-aacb0231d20b)
+
+
 
 
 
@@ -315,6 +313,75 @@ This is where you write the nav2_config.rviz file
 5. **Update the Plugin Parameters**
 
       We have to updated the LIDAR plugin parameters inside model.sdf inside the basic_mobile_robot_description folder
+
+   Update the LIDAR plugin parameters inside model.sdf inside the basic_mobile_robot_description folder
+
+6. **Update the Robot Localization Parameters**
+
+         cd ~/ros_ws/src/basic_mobile_robot/config
+
+
+         gedit ekf.yaml
+
+   Update the code here
+
+
+7. **Launch the Robot Without SLAM**
+
+         ros2 launch basic_mobile_robot basic_mobile_bot_v5.launch.py
+
+    **Move the Robot From Point A to Point B**
+
+   Set the initial pose of the robot by clicking the “2D Pose Estimate” on top of the rviz2 screen
+   Then click on the map in the estimated position where the robot is in Gazebo.
+   Set a goal for the robot to move to. Click “Navigation2 Goal” button in RViz, and click on a desired destination.
+
+   The wheeled robot will move to the goal destination.
+
+   To check the coordinate frames. Open a new terminal window, and type:
+
+
+
+         ros2 run tf2_tools view_frames
+
+         evince frames.pdf
+
+
+
+
+
+   ![image](https://github.com/siddhupoduval/SIMULATION-OF-A-MOBILE-ROBOT-USING-A-LIDAR-SENSOR-AND-SLAM-TECHNIQUE-/assets/117801516/3bea1b09-3725-482e-bb20-2bea89db8bfd)
+
+
+
+
+
+   8. **Launch the Robot With SLAM**
+  
+      **Prerequsists**
+
+      SLAM toolbox
+
+
+
+      To launch the robot with SLAM (simultaneous localization and mapping), open a terminal window, and run the following command:
+
+            ros2 launch basic_mobile_robot basic_mobile_bot_v5.launch.py slam:=True
+
+
+      Use the rqt_robot_steering tool to slowly drive the robot around the room. Open a terminal window, and type: 
+
+            rqt_robot_steering
+
+
+   9. **Save the Map**
+  
+             cd maps
+      
+       Type the following command to save the map:
+
+            ros2 run nav2_map_server map_saver_cli -f my_map
+
    
 
    
