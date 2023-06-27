@@ -185,3 +185,61 @@ GAZEBO
 
            ros2 launch basic_mobile_robot basic_mobile_bot_v2.launch.py
 
+
+
+
+# Setting Up LIDAR
+
+1. Sensor Fusion
+   
+   We will configure the robot_localization package to use an Extended Kalman Filter (ekf_node) to fuse the data from sensor inputs. These sensor inputs come from the IMU Gazebo plugin and the differential drive Gazebo plugin that are defined in our SDF file.
+
+**Install the Robot Localization Package**
+
+      sudo apt install ros-humble-robot-localization
+
+**Set the Configuration Parameters**
+
+We now need to specify the configuration parameters of the ekf_node by creating a YAML file.
+
+open the terminal from the basic_moblie_robot folder
+
+      cd config
+
+      gedit ekf.yaml
+
+This is where we keep our ekf.yaml code
+
+
+**edit the changes in the launch file**
+
+**Launch the Robot**
+
+      cd ~/ros_ws/
+
+      ros2 launch basic_mobile_robot basic_mobile_bot_v3.launch.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
