@@ -265,6 +265,31 @@ Edit the Launch File
 
 
 
+# Navigation and SLAM Using the ROS 2 Navigation Stack
+
+1. **Modify the Launch File**
+
+         cd launch
+
+
+         gedit basic_mobile_bot_v5.launch.py
+
+
+   Here you modify the code
+
+
+2. **Add a Static Map**
+
+   `~/ros_ws/src/basic_mobile_robot/maps`
+
+   We add the  pgm file and the yaml file inside this folder
+
+3. **Add Navigation Stack Parameters**
+
+   
+
+
+
 
 
 
