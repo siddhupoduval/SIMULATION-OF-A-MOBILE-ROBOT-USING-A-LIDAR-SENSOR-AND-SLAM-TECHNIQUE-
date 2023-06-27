@@ -183,6 +183,12 @@ GAZEBO
 
 
 
+
+   ![image](https://github.com/siddhupoduval/SIMULATION-OF-A-MOBILE-ROBOT-USING-A-LIDAR-SENSOR-AND-SLAM-TECHNIQUE-/assets/117801516/bc8777a7-3e4a-4c75-b1a9-ac34b9ee3484)
+
+
+
+
 # Setting Up LIDAR
 
 1. Sensor Fusion
