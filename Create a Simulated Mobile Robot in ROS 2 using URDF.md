@@ -106,7 +106,8 @@ save and close the file
 
    `evince frames.pdf`
 
-   ![image](https://github.com/siddhupoduval/SIMULATION-OF-A-MOBILE-ROBOT-USING-A-LIDAR-SENSOR-AND-SLAM-TECHNIQUE-/assets/117801516/a3e98b68-d399-4b39-8c53-01633294d167)
+
+    ![image](https://github.com/siddhupoduval/SIMULATION-OF-A-MOBILE-ROBOT-USING-A-LIDAR-SENSOR-AND-SLAM-TECHNIQUE-/assets/117801516/a3e98b68-d399-4b39-8c53-01633294d167)
 
 
 
