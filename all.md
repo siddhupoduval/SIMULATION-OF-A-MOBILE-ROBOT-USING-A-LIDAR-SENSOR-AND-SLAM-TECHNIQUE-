@@ -221,6 +221,38 @@ This is where we keep our ekf.yaml code
 
 
 
+2. Modify the SDF File for the Robot
+
+    Open terminal in basic_mobile
+
+         cd models
+
+   
+         cd basic_mobile_bot_description
+
+
+Type the following command:
+
+      gedit model.sdf
+
+Modify the sdf code and add lidar component to it and close the file.
+
+Modify the URDF File
+
+      gedit basic_mobile_bot_v2.urdf
+
+      cd models
+
+Edit the Launch File
+
+      cd launch
+
+      gedit basic_mobile_bot_v4.launch.py
+
+**Launch the Robot**
+
+      ros2 launch basic_mobile_robot basic_mobile_bot_v4.launch.py
+
 
 
 
