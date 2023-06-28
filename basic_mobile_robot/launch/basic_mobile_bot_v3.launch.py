@@ -1,7 +1,4 @@
-# Author: Addison Sears-Collins
-# Date: August 31, 2021
-# Description: Launch a basic mobile robot
-# https://automaticaddison.com
+
 
 import os
 from launch import LaunchDescription
